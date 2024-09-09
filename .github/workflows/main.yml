@@ -1,4 +1,4 @@
-name: NSelene Build
+name: test-run speed test
 
 on: 
   workflow_call
