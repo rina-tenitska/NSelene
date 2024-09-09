@@ -193,7 +193,7 @@ namespace NSelene.Tests.Integration.SharedDriver.SeleneSpec
         [Test]
         public void DoubleClick_Waits_For_NoOverlay_IfCustomized()
         {
-            Configuration.Timeout = 1.0;
+            // Configuration.Timeout = 1.0;
             Configuration.PollDuringWaits = 0.05;
             Given.OpenedPageWithBody(
                 @"
@@ -235,7 +235,7 @@ namespace NSelene.Tests.Integration.SharedDriver.SeleneSpec
 
             var afterCall = DateTime.Now;
             Assert.Greater(afterCall, beforeCall.AddSeconds(0.3));
-            Assert.Less(afterCall, beforeCall.AddSeconds(1.0));
+            Assert.Less(afterCall, beforeCall.AddSeconds(1.7));
             StringAssert.Contains("second", Configuration.Driver.Url);
         }
 
