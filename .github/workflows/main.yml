@@ -1,7 +1,7 @@
 name: test-run speed test
 
 on: 
-  workflow_call
+  push
 
 jobs:
   build:
