@@ -193,7 +193,7 @@ namespace NSelene.Tests.Integration.SharedDriver.SeleneSpec
         [Test]
         public void DoubleClick_Waits_For_NoOverlay_IfCustomized()
         {
-            // Configuration.Timeout = 1.0;
+            Configuration.Timeout = 1.0;
             Configuration.PollDuringWaits = 0.05;
             Given.OpenedPageWithBody(
                 @"
